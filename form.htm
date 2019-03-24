@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset=“utf-8”>
+        <script language="javascript"><!--javascript用這個包起來-->
+			function onClick(){
+				document.getElementById("mylabel").innerHTML = "hello world";
+				document.getElementById("mylabel").style.color = "red";
+			}
+		</script>
+    </head>
+    <body><!--form讓你可以跳出你指定的網址-->
+		<div>
+			<div id="mydiv" onclick="onClick"></div>
+			
+			<button onclick="onClick()">按我吧</button>
+			<label id ="mylabel" onmouseover="this.style.color='green';"
+			onmouseout="this.style.color='blue';">hi</label>
+		</div>
+		
+		<div>
+			<form>
+				<label id="uid">請輸入帳號：</label><input type="text"><p>
+				<input placeholder="請輸入密碼：" type="password"><p>
+				<input type="button" value="按我吧"><p>
+				<input type="hidden" value="1234">
+			
+				<textarea></textarea>
+			</form>
+		</div>
+		<div>
+			<form>
+				男生：<input name="sex" type="radio" value="m"><p>
+				女生：<input name="sex" type="radio" value="f" checked><p><!--後面加上checked就是先選起來-->
+				<p><input type="submit">
+				<input type="reset">
+			</form>
+		</div>
+			<form>
+				看電影：<input name="interest" type="checkbox" value="1"><p>
+				逛街：<input name="interest" type="checkbox" value="2" checked><p>
+				看書：<input name="interest" type="checkbox" value="3" checked><p>
+				<p><input type="submit">
+				<input type="reset">
+			</form>
+		
+		<p>
+			<button onclick="document.getElementById('uid').innerHTML = '請輸入帳號：';">中文</button>
+			<button onclick="document.getElementById('uid').innerHTML = 'Input your ID';">英文</button>
+		
+	</body>
+</html>
