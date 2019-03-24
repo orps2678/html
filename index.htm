@@ -2,12 +2,12 @@
 <html>
     <head>
         <meta charset=“utf-8”><!--使用編碼-->
-        <title>我的首頁</title><!--標題-->
+        <title>Index</title><!--標題-->
 		 <!--h1~h6主要用在標籤-->
     </head>
     <body><!--網頁內容-->
-        
-	    <a href="#apple">回到最下方</a><!--放在哪輸入前面top預設的參數就會對應到那個位置
+        <a id="top"></a><!--對應至頂-->
+	    
 		
 		<!--換段、換行、分隔線-->
 			123<br>356<!--br是換行，換兩行就是<br><br>換三行就是<br><br><br>-->
@@ -32,9 +32,9 @@
 		<a href="next.htm">前往next</a>
 		
 		
-		<div style="height: 100px;background-color:green"></div><!--height高度 background背景 color顏色 <dir>是區域-->
+		<div style="height: 100px;background-color:#7FFFD4"></div><!--height高度 background背景 color顏色 <dir>是區域-->
 		
-		<a id="apple"></a>
+		
 		
 		<!--圖片and超連結-->
 		
@@ -65,8 +65,30 @@
 		
 		<!--相對路徑-->
 			<a href="color/color.htm">color</a>
-			<a href="div.htm">div</a>
+			<a href="div.htm">div</a><br>
+			<a href="#top">至頂</a><!--放在哪輸入前面top預設的參數就會對應到那個位置
+			
+		<!--iframe--><!--可嵌入非常多網站內容ex:youtube googlemap-->
+		<div>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.6044320422598!2d120.64881961482347!3d24.150526184393676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d9650422ae1%3A0x8ddb31f44cc87fce!2z6LOH562W5pyDLeaVuOS9jeaVmeiCsueglOeptuaJgC3kuK3ljYDoqJPnt7TkuK3lv4M!5e0!3m2!1szh-TW!2stw!4v1553405283210" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<iframe width="1080" height="720" src="https://www.youtube.com/embed/ZsmjiVV81QU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		
+		<div>
+			<ol>
+				<li><a href="https://www.w3schools.com/tags/tag_hn.asp" target="_abc">w3schools.com</a></li>
+				<li>項目二</li>
+				<li>項目三</li>
+			</ol>
+
+			<ul>
+				<li>游泳</li>
+				<li>看書</li>
+				<li>打球</li>
+			</ul>
+		</div>
 	</body>
+	
 </html>
 
 
