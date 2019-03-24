@@ -88,7 +88,7 @@
 			</ul>
 		</div>
 		
-		<div style="position: static; top: 0px; left: 50px; width: 300px; background-color: green">
+		<div style="display: inline-block; width: 300px; background-color: green">
 			<!--<nav>--><!--導覽<nav>標籤--><!--拿來套用Bootstrap or 其他方法-->
 				<ul>
 					<li>
@@ -107,7 +107,8 @@
 			<!--</nav>-->
 		</div>
 		
-		<div style="position: relative; top: 0px; left: 50px"><!--影片--><!--10-21頁-->
+		<div style="display: inline-block; position: relative; top: 0px; left: 50px">
+		<!--影片--><!--div標籤display預設是block(垂直排列)需要改成inline-block(水平排列)--><!--10-21頁-->
 			<video width="720" height="480" controls>
 				<source src="https://www.w3schools.com/tags/movie.mp4" type="video/mp4">
 				你的瀏覽器不支援影片標籤
